@@ -1,4 +1,4 @@
-#Chatty App Redux
+# Chatty App Redux
 
 `main.js` was rewritten and renamed `main-jquery.js`. Please see `main.js` for original JavaScript code.
 
