@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chatty Pick Up Lines</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link id="style" rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <div class="main-heading">
+                <h6>The</h6>
+                <h3>Function</h3>
+                <h6>Of</h6>
+                <h1>Seduction</h1>
+                <nav id="navbar">
+                    <ul>
+                        <li>
+                            <input type="text" id="inputArea" placeholder="Enter message">
+                        </li>
+                        <li>
+                            <button id="navClear">Clear Message Board</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="main-content">
+            <div id="checkboxes" class="checkboxes">
+                <label>Dark Theme</label>
+                <input type="checkbox" value="dark" id="dark">
+                <label>Large Text</label>
+                <input type="checkbox" value="large" id="large">
+            </div>
+            <div class="message-board-container">
+                <p>Messages:</p>
+                <div id="box">
+                    <div id="messageBoard"></div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="modal-button">Customize Theme</button>
+        </div>
+        <!-- Trigger the modal with a button -->
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Customize</h4>
+                </div>
+                <div class="modal-body">
+                    <h5>Choose a theme:</h5>
+                    <form id="customize-form">
+                        <label>Fire Theme</label>
+                        <input type="radio" name="theme" value="0" id="fire" />
+                        <br />
+                        <label>Nature Theme</label>
+                        <input type="radio" name="theme" value="1" id="nature" />
+                        <br />
+                        <label>Default</label>
+                        <input type="radio" name="theme" value="2" id="default" />
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="save-button">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascripts/main-jquery.js"></script>
+   <!--  <script type="text/javascript" src="javascripts/load.js"></script>
+    <script type="text/javascript" src="javascripts/create.js"></script>
+    <script type="text/javascript" src="javascripts/remove.js"></script> -->
+</body>
+
+</html>
